@@ -6,17 +6,17 @@ using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 
-public class ViewHandAnimation : MonoBehaviour
+public class HandAnimation : MonoBehaviour
 {
-    [SerializeField]Animator handAnimator;
-    private const string GRAB="Grab";
-    private const string POINT="Point";
+    [SerializeField] Animator handAnimator;
+    private const string GRAB = "Grab";
+    private const string POINT = "Point";
     public void OnGrab(bool State)
     {
-        handAnimator.SetBool(GRAB,State);
+        handAnimator.SetBool(GRAB, State);
     }
     public void OnPint(bool State)
     {
-        handAnimator.SetBool(POINT,State);
+        handAnimator.SetBool(POINT, State);
     }
 }
